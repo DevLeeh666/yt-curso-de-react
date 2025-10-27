@@ -1,4 +1,4 @@
-import Input from "./Input";
+import Input from "./input"
 import { useState } from "react";
 function AddTask({ onAddTaskSubmit }) {
     const [title, setTitle] = useState("");
@@ -13,7 +13,7 @@ function AddTask({ onAddTaskSubmit }) {
 
             />
             <Input
-                type="text" 
+                type="text"
                 placeholder="Digite a descrição da tarefa"
                 value={description}
                 onChange={(event) => setDescription(event.target.value)}
